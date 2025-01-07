@@ -38,7 +38,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         m_MoveInput = Input.GetAxis("Horizontal");
-        m_JumpInput = Input.GetButton("Jump");
+        m_JumpInput |= Input.GetButtonDown("Jump");
     }
 
     private void FixedUpdate()
@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour
 
             if (m_JumpInput)
             {
+                m_JumpInput = false;
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
             }
         }
@@ -73,12 +74,12 @@ public class PlayerController : MonoBehaviour
 
                 if (IsTouchingLeftWall())
                 {
-                    Debug.Log("walljump left");
+                    m_JumpInput = false;
                     jumpForce = RotateVector2(Vector2.up, -m_WallJumpAngle) * m_WallJumpForce;
                 }
                 if (IsTouchingRightWall())
                 {
-                    Debug.Log("walljump right");
+                    m_JumpInput = false;
                     jumpForce = RotateVector2(Vector2.up, m_WallJumpAngle) * m_WallJumpForce;
                 }
 
