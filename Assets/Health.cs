@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Health : MonoBehaviour
 
     private int currentHealth;
 
+    public UnityEvent<int> onTakeDamage;
+    
     void Start()
     {
         // Initialise les points de vie à leur maximum au début
@@ -18,7 +21,7 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        Debug.Log(gameObject.name + " a subi " + damage + " dégâts. PV restants : " + currentHealth);
+        onTakeDamage.Invoke(damage);
 
         // Vérifie si les points de vie tombent à zéro ou en dessous
         if (currentHealth <= 0)
