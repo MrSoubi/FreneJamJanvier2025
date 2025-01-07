@@ -39,8 +39,6 @@ public class PlayerController : MonoBehaviour
     {
         m_MoveInput = Input.GetAxis("Horizontal");
         m_JumpInput = Input.GetButton("Jump");
-
-        SetOrientation();
     }
 
     private void FixedUpdate()
@@ -93,26 +91,6 @@ public class PlayerController : MonoBehaviour
         m_Rigidbody2D.linearVelocity = Vector3.SmoothDamp(m_Rigidbody2D.linearVelocity, targetVelocity, ref m_Velocity, movementSmoothing);
         m_Rigidbody2D.linearVelocity = Vector2.ClampMagnitude(m_Rigidbody2D.linearVelocity, maxSpeed);
     }
-
-    #region SpriteOrientation
-    private void SetOrientation()
-    {
-        if (m_MoveInput > 0 && !m_IsFacingRight)
-        {
-            Flip();
-        }
-        else if (m_MoveInput < 0 && m_IsFacingRight)
-        {
-            Flip();
-        }
-    }
-
-    private void Flip()
-    {
-        m_IsFacingRight = !m_IsFacingRight;
-        m_SpriteRenderer.flipX = !m_SpriteRenderer.flipX;
-    }
-    #endregion
 
     #region SurfaceCheck
     private bool IsGrounded()
