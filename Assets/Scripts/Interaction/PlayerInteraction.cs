@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerInteraction : MonoBehaviour
 {
     public RSE_PlayerInteraction playerInteraction;
-
+    public RSE_NoInteraction noInteraction;
     public float interactionRadius = 1.5f;
     private Interactable currentInteractable;
 
@@ -17,6 +17,10 @@ public class PlayerInteraction : MonoBehaviour
         {
             currentInteractable.Interact();
             playerInteraction?.FireEvent();
+        }
+        else if (Input.GetKeyDown(KeyCode.E))
+        {
+            noInteraction?.FireEvent();
         }
     }
 

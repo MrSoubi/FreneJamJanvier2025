@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3ffd8c7bfba7804ea96e2f764657059, type: 3}
-  m_Name: ProjectileCount
+  m_Script: {fileID: 11500000, guid: 4ca1c3e23e1922e439364ba6eb6e0b02, type: 3}
+  m_Name: RSO_PlayTime
   m_EditorClassIdentifier: 

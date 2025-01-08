@@ -16,7 +16,6 @@ public class Bomb : Interactable
         {
             isLit = true;
             StartCoroutine(ExplodeAfterDelay());
-            bombInteraction?.FireEvent();
         }
     }
 
@@ -30,7 +29,7 @@ public class Bomb : Interactable
 
     private void Explode()
     {
-        Debug.Log("BOOM ! La bombe a explosé.");
+        bombInteraction?.FireEvent();
 
         // Ajouter ici la logique d'explosion
         // Par exemple : instancier un effet visuel d'explosion

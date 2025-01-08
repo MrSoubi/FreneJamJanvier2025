@@ -345,7 +345,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32a2dd8da55fb48428bc9fec6fbd8213, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInteraction: {fileID: 0}
+  playerInteraction: {fileID: 11400000, guid: a08426c763afa1146a66ea3dfc08da09, type: 2}
+  noInteraction: {fileID: 11400000, guid: 45b19b1783ddcc14ba5077946a1a34f5, type: 2}
   interactionRadius: 1
 --- !u!1 &6826922965058217086
 GameObject:
