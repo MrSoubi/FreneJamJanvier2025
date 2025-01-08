@@ -2,9 +2,9 @@ using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "KillCount", menuName = "RSO/KillCount")]
-public class RSO_KillCount : ScriptableObject
+public class RSO_KillCount : ScriptableObject, IReactiveSO<int>
 {
-    public Action<int> onValueChanged;
+    public event Action<int> onValueChanged;
 
     private int _value;
 

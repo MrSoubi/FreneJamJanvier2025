@@ -2,11 +2,11 @@ using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "RSE_PlayerInteraction", menuName = "RSE/PlayerInteraction")]
-public class RSE_PlayerInteraction : ScriptableObject
+public class RSE_PlayerInteraction : ScriptableObject, IReactiveSE
 {
-    public Action TriggerEvent;
+    public event Action TriggerEvent;
 
-    private void FireEvent()
+    public void FireEvent()
     {
         TriggerEvent?.Invoke();
     }

@@ -16,7 +16,7 @@ public class PlayerInteraction : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && currentInteractable != null)
         {
             currentInteractable.Interact();
-            playerInteraction.TriggerEvent?.Invoke();
+            playerInteraction?.FireEvent();
         }
     }
 

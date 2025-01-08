@@ -2,11 +2,11 @@ using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "RSE_EnemyInteraction", menuName = "RSE/EnemyInteraction")]
-public class RSE_EnemyInteraction : ScriptableObject
+public class RSE_EnemyInteraction : ScriptableObject, IReactiveSE
 {
-    public Action TriggerEvent;
+    public event Action TriggerEvent;
 
-    private void FireEvent()
+    public void FireEvent()
     {
         TriggerEvent?.Invoke();
     }

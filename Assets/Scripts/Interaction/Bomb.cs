@@ -16,7 +16,7 @@ public class Bomb : Interactable
         {
             isLit = true;
             StartCoroutine(ExplodeAfterDelay());
-            bombInteraction.TriggerEvent?.Invoke();
+            bombInteraction?.FireEvent();
         }
     }
 

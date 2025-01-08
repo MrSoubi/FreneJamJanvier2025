@@ -6,7 +6,7 @@ public class Door : Interactable
 
     public override void Interact()
     {
-        doorInteraction.TriggerEvent?.Invoke();
+        doorInteraction?.FireEvent();
         Destroy(gameObject);
     }
 }

@@ -1,12 +1,12 @@
 using System;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "RSE_PlayerMoveShoot", menuName = "RSE/PlayerMoveShoot")]
-public class RSE_PlayerMoveShoot : ScriptableObject
+[CreateAssetMenu(fileName = "RSE_PlayerShoot", menuName = "RSE/PlayerShoot")]
+public class RSE_PlayerShoot : ScriptableObject, IReactiveSE
 {
-    public Action TriggerEvent;
+    public event Action TriggerEvent;
 
-    private void FireEvent()
+    public void FireEvent()
     {
         TriggerEvent?.Invoke();
     }

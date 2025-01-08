@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour
                 m_JumpInput = false;
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
 
-                playerJump.TriggerEvent?.Invoke();
+                playerJump.FireEvent();
             }
         }
         else
@@ -99,14 +99,14 @@ public class PlayerController : MonoBehaviour
                     m_JumpInput = false;
                     jumpForce = RotateVector2(Vector2.up, -m_WallJumpAngle) * m_WallJumpForce;
 
-                    playerWallJump.TriggerEvent?.Invoke();
+                    playerWallJump?.FireEvent();
                 }
                 if (IsTouchingRightWall())
                 {
                     m_JumpInput = false;
                     jumpForce = RotateVector2(Vector2.up, m_WallJumpAngle) * m_WallJumpForce;
 
-                    playerWallJump.TriggerEvent?.Invoke();
+                    playerWallJump?.FireEvent();
                 }
 
                 m_Rigidbody2D.AddForce(jumpForce);
@@ -116,11 +116,11 @@ public class PlayerController : MonoBehaviour
 
         if (m_MoveInput > 0)
         {
-            playerMoveRight.TriggerEvent?.Invoke();
+            playerMoveRight?.FireEvent();
         }
         if (m_MoveInput < 0)
         {
-            playerMoveLeft.TriggerEvent?.Invoke();
+            playerMoveLeft?.FireEvent();
         }
 
         targetVelocity = new Vector2(m_MoveInput * speed, m_Rigidbody2D.linearVelocity.y);

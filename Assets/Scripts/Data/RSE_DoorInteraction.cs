@@ -2,11 +2,11 @@ using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "RSE_DoorInteraction", menuName = "RSE/DoorInteraction")]
-public class RSE_DoorInteraction : ScriptableObject
+public class RSE_DoorInteraction : ScriptableObject, IReactiveSE
 {
-    public Action TriggerEvent;
+    public event Action TriggerEvent;
 
-    private void FireEvent()
+    public void FireEvent()
     {
         TriggerEvent?.Invoke();
     }

@@ -2,11 +2,11 @@ using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "RSE_WallInteraction", menuName = "RSE/WallInteraction")]
-public class RSE_WallInteraction : ScriptableObject
+public class RSE_WallInteraction : ScriptableObject, IReactiveSE
 {
-    public Action TriggerEvent;
+    public event Action TriggerEvent;
 
-    private void FireEvent()
+    public void FireEvent()
     {
         TriggerEvent?.Invoke();
     }

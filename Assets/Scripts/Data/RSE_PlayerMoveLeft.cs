@@ -2,11 +2,11 @@ using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "RSE_PlayerMoveLeft", menuName = "RSE/PlayerMoveLeft")]
-public class RSE_PlayerMoveLeft : ScriptableObject
+public class RSE_PlayerMoveLeft : ScriptableObject, IReactiveSE
 {
-    public Action TriggerEvent;
+    public event Action TriggerEvent;
 
-    private void FireEvent()
+    public void FireEvent()
     {
         TriggerEvent?.Invoke();
     }

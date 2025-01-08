@@ -2,9 +2,9 @@ using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "PlayTime", menuName = "RSO/PlayTime")]
-public class RSO_PlayTime : ScriptableObject
+public class RSO_PlayTime : ScriptableObject, IReactiveSO<float>
 {
-    public Action<float> onValueChanged;
+    public event Action<float> onValueChanged;
 
     private float _value;
 
@@ -13,7 +13,7 @@ public class RSO_PlayTime : ScriptableObject
         get => _value;
         set
         {
-            if (_value == value) return;
+            if (Mathf.Approximately(_value, value)) return; // Évite les mises à jour inutiles pour les float
 
             _value = value;
             onValueChanged?.Invoke(_value);

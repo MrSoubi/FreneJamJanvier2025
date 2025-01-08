@@ -2,11 +2,11 @@ using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "RSE_PlayerMoveRight", menuName = "RSE/PlayerMoveRight")]
-public class RSE_PlayerMoveRight : ScriptableObject
+public class RSE_PlayerMoveRight : ScriptableObject, IReactiveSE
 {
-    public Action TriggerEvent;
+    public event Action TriggerEvent;
 
-    private void FireEvent()
+    public void FireEvent()
     {
         TriggerEvent?.Invoke();
     }

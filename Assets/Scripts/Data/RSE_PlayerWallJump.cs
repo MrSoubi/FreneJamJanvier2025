@@ -2,11 +2,11 @@ using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "RSE_PlayerWallJump", menuName = "RSE/PlayerWallJump")]
-public class RSE_PlayerWallJump : ScriptableObject
+public class RSE_PlayerWallJump : ScriptableObject, IReactiveSE
 {
-    public Action TriggerEvent;
+    public event Action TriggerEvent;
 
-    private void FireEvent()
+    public void FireEvent()
     {
         TriggerEvent?.Invoke();
     }

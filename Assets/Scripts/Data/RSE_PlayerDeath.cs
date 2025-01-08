@@ -2,11 +2,11 @@ using System;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "RSE_PlayerDeath", menuName = "RSE/PlayerDeath")]
-public class RSE_PlayerDeath : ScriptableObject
+public class RSE_PlayerDeath : ScriptableObject, IReactiveSE
 {
-    public Action TriggerEvent;
+    public event Action TriggerEvent;
 
-    private void FireEvent()
+    public void FireEvent()
     {
         TriggerEvent?.Invoke();
     }
