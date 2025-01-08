@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class ProjectileShooter : MonoBehaviour
 {
+    public RSO_ProjectileCount projectileCount;
+
     [Header("Shoot Settings")]
     [Tooltip("Position o� le projectile sera instanci�.")]
     public Transform shootPoint;
@@ -34,6 +36,8 @@ public class ProjectileShooter : MonoBehaviour
             {
                 rb.linearVelocity = shootPoint.right * projectileSpeed; // Assume que le point de tir regarde dans la bonne direction
             }
+
+            projectileCount.Value++;
         }
         else
         {

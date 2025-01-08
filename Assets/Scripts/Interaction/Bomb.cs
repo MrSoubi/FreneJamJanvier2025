@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Bomb : Interactable
 {
+    public RSE_BombInteraction bombInteraction;
+
     private bool isLit = false;
     public float explosionDelay = 3f; // Temps avant explosion en secondes
     public GameObject explosionEffect; // Effet d'explosion (optionnel)
@@ -14,6 +16,7 @@ public class Bomb : Interactable
         {
             isLit = true;
             StartCoroutine(ExplodeAfterDelay());
+            bombInteraction.TriggerEvent?.Invoke();
         }
     }
 
