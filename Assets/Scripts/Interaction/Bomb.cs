@@ -6,6 +6,7 @@ public class Bomb : Interactable
     private bool isLit = false;
     public float explosionDelay = 3f; // Temps avant explosion en secondes
     public GameObject explosionEffect; // Effet d'explosion (optionnel)
+    [SerializeField] HurtBox m_HurtBox;
 
     public override void Interact()
     {
@@ -34,6 +35,8 @@ public class Bomb : Interactable
         {
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
         }
+
+        m_HurtBox.ApplyDamage();
 
         // Supprimer ou désactiver la bombe après l'explosion
         Destroy(gameObject);
