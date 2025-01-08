@@ -49,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionDelay: 3
   explosionEffect: {fileID: 0}
+  m_HurtBox: {fileID: 911254812529196672}
 --- !u!61 &2700761757752983924
 BoxCollider2D:
   m_ObjectHideFlags: 0
