@@ -240,6 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a9cbcb10cd0f9845a5f27cef5fa3b89, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  killCount: {fileID: 11400000, guid: 4f6b50faddcf487459377f467f69d1a9, type: 2}
   maxHealth: 100
   onTakeDamage:
     m_PersistentCalls:

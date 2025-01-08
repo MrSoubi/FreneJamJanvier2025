@@ -4,6 +4,15 @@ using UnityEngine.Events;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Output Data")]
+    public RSO_TotalWalkDistance totalWalkDistance;
+
+    [Header("Output Events")]
+    public RSE_PlayerJump playerJump;
+    public RSE_PlayerMoveLeft playerMoveLeft;
+    public RSE_PlayerMoveRight playerMoveRight;
+    public RSE_PlayerWallJump playerWallJump;
+
     [SerializeField] private float m_JumpForce = 400f;
     [SerializeField] private float m_WallJumpForce = 1000f;
     [SerializeField] private float m_GroundSpeed = 10f;
@@ -35,6 +44,13 @@ public class PlayerController : MonoBehaviour
     private bool m_JumpInput = false;
     private bool m_IsJumping = false;
 
+    private Vector3 lastPosition;
+
+    private void Start()
+    {
+        lastPosition = transform.position;
+    }
+
     private void Update()
     {
         m_MoveInput = Input.GetAxis("Horizontal");
@@ -56,10 +72,16 @@ public class PlayerController : MonoBehaviour
             maxSpeed = m_MaxGroundSpeed;
             movementSmoothing = m_GroundMovementSmoothing;
 
+            Vector2 walkedDistance = transform.position - lastPosition;
+            totalWalkDistance.Value += walkedDistance.magnitude;
+            lastPosition = transform.position;
+
             if (m_JumpInput)
             {
                 m_JumpInput = false;
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+
+                playerJump.FireEvent();
             }
         }
         else
@@ -76,16 +98,29 @@ public class PlayerController : MonoBehaviour
                 {
                     m_JumpInput = false;
                     jumpForce = RotateVector2(Vector2.up, -m_WallJumpAngle) * m_WallJumpForce;
+
+                    playerWallJump?.FireEvent();
                 }
                 if (IsTouchingRightWall())
                 {
                     m_JumpInput = false;
                     jumpForce = RotateVector2(Vector2.up, m_WallJumpAngle) * m_WallJumpForce;
+
+                    playerWallJump?.FireEvent();
                 }
 
                 m_Rigidbody2D.AddForce(jumpForce);
             }
 
+        }
+
+        if (m_MoveInput > 0)
+        {
+            playerMoveRight?.FireEvent();
+        }
+        if (m_MoveInput < 0)
+        {
+            playerMoveLeft?.FireEvent();
         }
 
         targetVelocity = new Vector2(m_MoveInput * speed, m_Rigidbody2D.linearVelocity.y);

@@ -311,6 +311,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07325773a1bb3bc4897d62a01e2b7c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalWalkDistance: {fileID: 11400000, guid: 762ee427eb54dcb4eab68415240bde2d, type: 2}
+  playerJump: {fileID: 11400000, guid: 80f1b29f0315a794ca428145fd61e510, type: 2}
+  playerMoveLeft: {fileID: 11400000, guid: 3fc963f7a6ddd51499fb58468d848797, type: 2}
+  playerMoveRight: {fileID: 11400000, guid: e38765791972bd14db980e3bdbc7e182, type: 2}
+  playerWallJump: {fileID: 11400000, guid: 4ccf0816a0465794ca199754ea0757dd, type: 2}
   m_JumpForce: 400
   m_WallJumpForce: 1000
   m_GroundSpeed: 10
@@ -340,6 +345,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32a2dd8da55fb48428bc9fec6fbd8213, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInteraction: {fileID: 11400000, guid: a08426c763afa1146a66ea3dfc08da09, type: 2}
+  noInteraction: {fileID: 11400000, guid: 45b19b1783ddcc14ba5077946a1a34f5, type: 2}
   interactionRadius: 1
 --- !u!1 &6826922965058217086
 GameObject:
@@ -385,6 +392,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc92f9c9f79153f4991742d58058d2cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectileCount: {fileID: 11400000, guid: 2a96a152337b52841a8f790b33787e76, type: 2}
   shootPoint: {fileID: 7525398205304132203}
   projectilePrefab: {fileID: 7074218183982607485, guid: ff221adc9bba6e646913baec73a70bec, type: 3}
   projectileSpeed: 10

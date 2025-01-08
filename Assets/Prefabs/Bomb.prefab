@@ -47,6 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f77175b71301e0c45855f73a7ce2ba29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bombInteraction: {fileID: 11400000, guid: 08fdfc0ac3e28404aa8ad614ae4d9425, type: 2}
   explosionDelay: 3
   explosionEffect: {fileID: 0}
   m_HurtBox: {fileID: 911254812529196672}

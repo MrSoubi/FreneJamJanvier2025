@@ -3,6 +3,8 @@ using UnityEngine.Events;
 
 public class Health : MonoBehaviour
 {
+    public RSO_KillCount killCount;
+
     [Header("Health Settings")]
     [Tooltip("Points de vie maximum de l'objet.")]
     public int maxHealth = 100;
@@ -33,7 +35,7 @@ public class Health : MonoBehaviour
     // Fonction appelée lorsque les points de vie atteignent zéro
     private void Die()
     {
-        Debug.Log(gameObject.name + " est détruit.");
+        killCount.Value++;
         Destroy(gameObject); // Détruit l'objet
     }
 

@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Bomb : Interactable
 {
+    public RSE_BombInteraction bombInteraction;
+
     private bool isLit = false;
     public float explosionDelay = 3f; // Temps avant explosion en secondes
     public GameObject explosionEffect; // Effet d'explosion (optionnel)
@@ -27,7 +29,7 @@ public class Bomb : Interactable
 
     private void Explode()
     {
-        Debug.Log("BOOM ! La bombe a explosé.");
+        bombInteraction?.FireEvent();
 
         // Ajouter ici la logique d'explosion
         // Par exemple : instancier un effet visuel d'explosion
