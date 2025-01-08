@@ -320,7 +320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9802b13213681d478d076fad807cb7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundMoveSpeed: 2
+  groundMoveSpeed: 3.5
   airMoveSpeed: 1
   damping: 0.1
   m_PlayerDetector: {fileID: 4501943251981809625}
