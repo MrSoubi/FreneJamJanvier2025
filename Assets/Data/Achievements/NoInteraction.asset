@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Brasseur de vent
   description: Interagir avec rien du tout
-  icon: {fileID: 0}
+  icon: {fileID: 425529475, guid: a5dd92683731a5446a91c93c43061718, type: 3}
   isUnlocked: 0
   reactiveSO: {fileID: 0}
   reactiveSE: {fileID: 11400000, guid: 45b19b1783ddcc14ba5077946a1a34f5, type: 2}

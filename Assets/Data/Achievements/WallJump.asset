@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Parkour !
   description: Faire un wall jump
-  icon: {fileID: 0}
+  icon: {fileID: 425529475, guid: a5dd92683731a5446a91c93c43061718, type: 3}
   isUnlocked: 0
   reactiveSO: {fileID: 0}
   reactiveSE: {fileID: 11400000, guid: 4ccf0816a0465794ca199754ea0757dd, type: 2}

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Curieux
   description: "Int\xE9ragir avec quelque chose"
-  icon: {fileID: 0}
+  icon: {fileID: 425529475, guid: a5dd92683731a5446a91c93c43061718, type: 3}
   isUnlocked: 0
   reactiveSO: {fileID: 0}
   reactiveSE: {fileID: 11400000, guid: a08426c763afa1146a66ea3dfc08da09, type: 2}

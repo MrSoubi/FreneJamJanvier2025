@@ -393,6 +393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileCount: {fileID: 11400000, guid: 2a96a152337b52841a8f790b33787e76, type: 2}
+  playerShoot: {fileID: 0}
   shootPoint: {fileID: 7525398205304132203}
   projectilePrefab: {fileID: 7074218183982607485, guid: ff221adc9bba6e646913baec73a70bec, type: 3}
   projectileSpeed: 10
