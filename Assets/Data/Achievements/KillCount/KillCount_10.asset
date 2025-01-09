@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Kill 10
   description: 
-  icon: {fileID: 0}
+  icon: {fileID: 425529475, guid: a5dd92683731a5446a91c93c43061718, type: 3}
   isUnlocked: 0
   reactiveSO: {fileID: 11400000, guid: 4f6b50faddcf487459377f467f69d1a9, type: 2}
+  reactiveSE: {fileID: 0}
   targetValue: 10

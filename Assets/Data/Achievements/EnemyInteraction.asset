@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Main baladeuse
   description: Interagir avec un ennemi
-  icon: {fileID: 0}
+  icon: {fileID: 425529475, guid: a5dd92683731a5446a91c93c43061718, type: 3}
   isUnlocked: 0
   reactiveSO: {fileID: 0}
   reactiveSE: {fileID: 11400000, guid: 77d81e17a0415f54cb8e3ce7326c3c43, type: 2}
