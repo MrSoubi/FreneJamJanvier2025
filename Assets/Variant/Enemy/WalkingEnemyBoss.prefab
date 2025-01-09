@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &1324594383800354550
+--- !u!1001 &7912005731020006900
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,35 +10,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1757615675228146883, guid: 1980c780d54000d468f8499d4ef1e119, type: 3}
       propertyPath: m_Size.x
-      value: 1.5113809
+      value: 2.46772
       objectReference: {fileID: 0}
     - target: {fileID: 1757615675228146883, guid: 1980c780d54000d468f8499d4ef1e119, type: 3}
       propertyPath: m_Size.y
-      value: 1.511381
+      value: 2.46772
       objectReference: {fileID: 0}
     - target: {fileID: 1757615675228146883, guid: 1980c780d54000d468f8499d4ef1e119, type: 3}
       propertyPath: m_Offset.x
-      value: 0.0032769442
+      value: -0.017957687
       objectReference: {fileID: 0}
     - target: {fileID: 1757615675228146883, guid: 1980c780d54000d468f8499d4ef1e119, type: 3}
       propertyPath: m_Offset.y
-      value: 0.8984967
+      value: 0.88098335
       objectReference: {fileID: 0}
     - target: {fileID: 1828995490542323491, guid: 1980c780d54000d468f8499d4ef1e119, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.6111
+      value: 2.3887198
       objectReference: {fileID: 0}
     - target: {fileID: 1828995490542323491, guid: 1980c780d54000d468f8499d4ef1e119, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.6111
+      value: 2.3887198
       objectReference: {fileID: 0}
     - target: {fileID: 1828995490542323491, guid: 1980c780d54000d468f8499d4ef1e119, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.6111
-      objectReference: {fileID: 0}
-    - target: {fileID: 2238526797462591783, guid: 1980c780d54000d468f8499d4ef1e119, type: 3}
-      propertyPath: groundMoveSpeed
-      value: 7
+      value: 2.3887198
       objectReference: {fileID: 0}
     - target: {fileID: 4810288548955141262, guid: 1980c780d54000d468f8499d4ef1e119, type: 3}
       propertyPath: m_LocalPosition.x
@@ -82,23 +78,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7350320628102696405, guid: 1980c780d54000d468f8499d4ef1e119, type: 3}
       propertyPath: m_Name
-      value: WalkingEnemy_begenning_level
+      value: WalkingEnemyBoss
       objectReference: {fileID: 0}
     - target: {fileID: 7593031119173571145, guid: 1980c780d54000d468f8499d4ef1e119, type: 3}
       propertyPath: maxHealth
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 9208144076546852080, guid: 1980c780d54000d468f8499d4ef1e119, type: 3}
-      propertyPath: m_Radius
-      value: 10.068535
-      objectReference: {fileID: 0}
-    - target: {fileID: 9208144076546852080, guid: 1980c780d54000d468f8499d4ef1e119, type: 3}
-      propertyPath: m_Offset.x
-      value: 2.266038
-      objectReference: {fileID: 0}
-    - target: {fileID: 9208144076546852080, guid: 1980c780d54000d468f8499d4ef1e119, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.18574142
+      value: 300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

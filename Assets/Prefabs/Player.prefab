@@ -250,7 +250,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 1.5
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -316,15 +316,15 @@ MonoBehaviour:
   playerMoveLeft: {fileID: 11400000, guid: 3fc963f7a6ddd51499fb58468d848797, type: 2}
   playerMoveRight: {fileID: 11400000, guid: e38765791972bd14db980e3bdbc7e182, type: 2}
   playerWallJump: {fileID: 11400000, guid: 4ccf0816a0465794ca199754ea0757dd, type: 2}
-  m_JumpForce: 400
-  m_WallJumpForce: 1000
+  m_JumpForce: 1000
+  m_WallJumpForce: 1250
   m_GroundSpeed: 10
-  m_AirSpeed: 10
-  m_MaxGroundSpeed: 10
-  m_MaxAirSpeed: 10
+  m_AirSpeed: 7
+  m_MaxGroundSpeed: 7
+  m_MaxAirSpeed: 7
   m_GroundMovementSmoothing: 0.01
-  m_AirMovementSmoothing: 0.08
-  m_WallJumpAngle: 30
+  m_AirMovementSmoothing: 0.0649
+  m_WallJumpAngle: 40
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 8
@@ -393,6 +393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileCount: {fileID: 11400000, guid: 2a96a152337b52841a8f790b33787e76, type: 2}
+  playerShoot: {fileID: 0}
   shootPoint: {fileID: 7525398205304132203}
   projectilePrefab: {fileID: 7074218183982607485, guid: ff221adc9bba6e646913baec73a70bec, type: 3}
   projectileSpeed: 10
