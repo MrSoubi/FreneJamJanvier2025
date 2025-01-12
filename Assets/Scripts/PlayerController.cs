@@ -126,6 +126,8 @@ public class PlayerController : MonoBehaviour
         targetVelocity = new Vector2(m_MoveInput * speed, m_Rigidbody2D.linearVelocity.y);
         m_Rigidbody2D.linearVelocity = Vector3.SmoothDamp(m_Rigidbody2D.linearVelocity, targetVelocity, ref m_Velocity, movementSmoothing);
         m_Rigidbody2D.linearVelocity = Vector2.ClampMagnitude(m_Rigidbody2D.linearVelocity, maxSpeed);
+
+        m_JumpInput = false;
     }
 
     #region SurfaceCheck
