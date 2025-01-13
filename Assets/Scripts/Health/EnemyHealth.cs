@@ -11,7 +11,7 @@ public class EnemyHealth : Health
         killCount.Value++;
         if (deathAnimation != null)
         {
-            Instantiate(deathAnimation);
+            Instantiate(deathAnimation, transform.position, Quaternion.identity);
         }
         Destroy(gameObject); // Détruit l'objet
     }
