@@ -19,13 +19,36 @@ public class Bomb : Interactable
         }
     }
 
+    public SpriteRenderer spriteRenderer;
+    public float initialFlashDuration = 0.5f; // Durée du premier flash
+    public float reductionFlashDuration = 0.08f; // Durée du dernier flash
+
     private IEnumerator ExplodeAfterDelay()
     {
         Debug.Log("Bombe allumée ! Compte à rebours lancé...");
-        yield return new WaitForSeconds(explosionDelay);
+
+        float elapsedTime = 0f;
+        float flashDuration = initialFlashDuration;
+
+        while (elapsedTime < explosionDelay)
+        {
+            // Alterner entre la couleur blanche et la couleur originale
+            spriteRenderer.color = Color.red;
+            yield return new WaitForSeconds(flashDuration / 4);
+
+            spriteRenderer.color = Color.white; // Remplacer par la couleur d'origine si besoin
+            yield return new WaitForSeconds(flashDuration / 4 * 3);
+
+            // Réduire progressivement la durée des flashs
+            flashDuration = Mathf.Clamp(flashDuration - reductionFlashDuration, 0.05f, Mathf.Infinity);
+
+            elapsedTime += flashDuration;
+        }
 
         Explode();
     }
+
+
 
     public void Explode()
     {
