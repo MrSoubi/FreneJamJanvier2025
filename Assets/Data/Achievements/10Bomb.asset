@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Little boy
   description: Faire exploser 10 barils
-  icon: {fileID: 0}
+  icon: {fileID: 327617049, guid: a5dd92683731a5446a91c93c43061718, type: 3}
   isUnlocked: 0
   reactiveSO: {fileID: 11400000, guid: c093fecc839c2264d9999907b27e5980, type: 2}
   reactiveSE: {fileID: 0}
