@@ -311,6 +311,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  damage: 1
 --- !u!114 &8951282646649413407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -328,6 +329,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   killCount: {fileID: 11400000, guid: 4f6b50faddcf487459377f467f69d1a9, type: 2}
+  deathAnimation: {fileID: 7949982767956144720, guid: 9d6f45af3345cb743a5f753df00ead1c, type: 3}
 --- !u!1001 &1219130767765416203
 PrefabInstance:
   m_ObjectHideFlags: 0
