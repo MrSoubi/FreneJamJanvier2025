@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public RSO_PlayTime playTime;
+
     public RSE_ChangeScene changeScene;
     public RSE_PlayerDeath playerDeath;
 
@@ -22,6 +24,11 @@ public class GameManager : MonoBehaviour
     {
         changeScene.TriggerEvent -= ChangeScene;
         playerDeath.TriggerEvent -= ReloadScene;
+    }
+
+    private void Update()
+    {
+        playTime.Value += Time.deltaTime;
     }
 
     void Start()

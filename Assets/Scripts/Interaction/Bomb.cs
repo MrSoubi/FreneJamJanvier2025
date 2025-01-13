@@ -4,6 +4,7 @@ using System.Collections;
 public class Bomb : Interactable
 {
     public RSE_BombInteraction bombInteraction;
+    public RSO_BombCount bombCount;
 
     private bool isLit = false;
     public float explosionDelay = 3f; // Temps avant explosion en secondes
@@ -53,6 +54,7 @@ public class Bomb : Interactable
     public void Explode()
     {
         bombInteraction?.FireEvent();
+        bombCount.Value++;
 
         // Ajouter ici la logique d'explosion
         // Par exemple : instancier un effet visuel d'explosion

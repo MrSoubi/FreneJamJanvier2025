@@ -1,4 +1,5 @@
 using NUnit.Framework.Interfaces;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -12,6 +13,9 @@ public class PlayerController : MonoBehaviour
     public RSE_PlayerMoveLeft playerMoveLeft;
     public RSE_PlayerMoveRight playerMoveRight;
     public RSE_PlayerWallJump playerWallJump;
+
+    public RSO_JumpCount jumpCount;
+    public RSO_WallJumpCount wallJumpCount;
 
     [SerializeField] private float m_JumpForce = 400f;
     [SerializeField] private float m_WallJumpForce = 1000f;
@@ -80,7 +84,7 @@ public class PlayerController : MonoBehaviour
             {
                 m_JumpInput = false;
                 m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
-
+                jumpCount.Value++;
                 playerJump.FireEvent();
             }
         }
@@ -98,14 +102,14 @@ public class PlayerController : MonoBehaviour
                 {
                     m_JumpInput = false;
                     jumpForce = RotateVector2(Vector2.up, -m_WallJumpAngle) * m_WallJumpForce;
-
+                    wallJumpCount.Value++;
                     playerWallJump?.FireEvent();
                 }
                 if (IsTouchingRightWall())
                 {
                     m_JumpInput = false;
                     jumpForce = RotateVector2(Vector2.up, m_WallJumpAngle) * m_WallJumpForce;
-
+                    wallJumpCount.Value++;
                     playerWallJump?.FireEvent();
                 }
 
