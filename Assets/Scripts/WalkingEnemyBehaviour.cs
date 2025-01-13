@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyBehavior : MonoBehaviour
+public class WalkingEnemyBehavior : MonoBehaviour
 {
     [Header("Movement Settings")]
     public float groundMoveSpeed = 2f; // Speed at which the enemy moves towards the player on the ground
