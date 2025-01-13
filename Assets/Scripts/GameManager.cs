@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
     public RSE_ChangeScene changeScene;
     public RSE_PlayerDeath playerDeath;
 
-    public TextMeshProUGUI starterCounter;
+    public TextMeshProUGUI deathMessage;
 
     string m_currentScene;
 
@@ -46,17 +46,13 @@ public class GameManager : MonoBehaviour
 
     async void ReloadScene()
     {
-        starterCounter.enabled = true;
+        deathMessage.enabled = true;
         await SceneManager.UnloadSceneAsync(m_currentScene);
-        starterCounter.text = "3";
         await Task.Delay(1000);
-        starterCounter.text = "2";
         await Task.Delay(1000);
-        starterCounter.text = "1";
         await Task.Delay(1000);
-        starterCounter.text = "";
-        starterCounter.enabled = false;
         await SceneManager.LoadSceneAsync(m_currentScene, LoadSceneMode.Additive);
         SceneManager.SetActiveScene(SceneManager.GetSceneByName(m_currentScene));
+        deathMessage.enabled = false;
     }
 }
