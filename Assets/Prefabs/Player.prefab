@@ -442,6 +442,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   deathCount: {fileID: 11400000, guid: a2b3c44f1c1005142955a70d614341a6, type: 2}
+  playerDeath: {fileID: 11400000, guid: 358d3e526deddbd439d1c02db1a772bc, type: 2}
   lifeDisplay: {fileID: 3629570265017110196}
   invicibilityTime: 2
 --- !u!1 &5620217219037681477

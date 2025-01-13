@@ -144,3 +144,4 @@ MonoBehaviour:
   target: {fileID: 0}
   damping: 0.3
   offset: {x: 0, y: 0, z: -10}
+  bombInteraction: {fileID: 11400000, guid: 08fdfc0ac3e28404aa8ad614ae4d9425, type: 2}

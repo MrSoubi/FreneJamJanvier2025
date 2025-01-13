@@ -4,6 +4,7 @@ using UnityEngine.Events;
 public class PlayerHealth : Health
 {
     public RSO_DeathCount deathCount;
+    public RSE_PlayerDeath playerDeath;
     [SerializeField] PlayerLifeDisplay lifeDisplay;
     [SerializeField] float invicibilityTime = 2f;
     private float lastDamageTime = -1;
@@ -11,6 +12,7 @@ public class PlayerHealth : Health
     public override void Die()
     {
         deathCount.Value++;
+        playerDeath.FireEvent();
         Destroy(gameObject); // Détruit l'objet
     }
 
