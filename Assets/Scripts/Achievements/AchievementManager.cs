@@ -5,6 +5,10 @@ public class AchievementManager : MonoBehaviour
 {
     public List<Achievement> achievements; // Liste de tous les succès
 
+    [SerializeField] GameObject achievementPopUpPrefab;
+    [SerializeField] GameObject achievementPopUpContainer;
+
+
     void Start()
     {
         foreach (var achievement in achievements)
@@ -58,6 +62,8 @@ public class AchievementManager : MonoBehaviour
 
     private void ShowAchievementPopup(Achievement achievement)
     {
-        // Ajouter ici votre logique d’affichage de notification
+        GameObject newPopUp = Instantiate(achievementPopUpPrefab, achievementPopUpContainer.transform);
+
+        newPopUp.GetComponent<AchievementPopUp>().Initialize(achievement);
     }
 }
