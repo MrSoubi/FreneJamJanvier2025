@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Bienvenue
   description: Joue pendant 1 seconde
-  icon: {fileID: 0}
+  icon: {fileID: 327617049, guid: a5dd92683731a5446a91c93c43061718, type: 3}
   isUnlocked: 0
   reactiveSO: {fileID: 11400000, guid: 9157bd035b0f25a41841ab633c63bb39, type: 2}
   reactiveSE: {fileID: 0}
