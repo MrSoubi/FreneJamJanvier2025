@@ -16,6 +16,7 @@ public class DamageMarker : MonoBehaviour
 
     void HandleDamageTaken(int damage)
     {
-        Instantiate(hitMarkerPrefab, transform.position, Quaternion.identity);
+        GameObject hitMarker = Instantiate(hitMarkerPrefab, transform.position, Quaternion.identity);
+        hitMarker.GetComponent<DamageMarkerBehavior>().SetValue(damage);
     }
 }

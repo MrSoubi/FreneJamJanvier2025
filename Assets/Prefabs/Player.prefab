@@ -209,6 +209,7 @@ GameObject:
   - component: {fileID: 5788193483672970001}
   - component: {fileID: 1227794506239238829}
   - component: {fileID: 4275389550029116032}
+  - component: {fileID: 7599945606972686303}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -348,6 +349,23 @@ MonoBehaviour:
   playerInteraction: {fileID: 11400000, guid: a08426c763afa1146a66ea3dfc08da09, type: 2}
   noInteraction: {fileID: 11400000, guid: 45b19b1783ddcc14ba5077946a1a34f5, type: 2}
   interactionRadius: 1
+--- !u!114 &7599945606972686303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5397805455772876623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28b6b696ab0991546bc2196259b935b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  onTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  deathCount: {fileID: 11400000, guid: a2b3c44f1c1005142955a70d614341a6, type: 2}
 --- !u!1 &6826922965058217086
 GameObject:
   m_ObjectHideFlags: 0
@@ -397,6 +415,7 @@ MonoBehaviour:
   shootPoint: {fileID: 7525398205304132203}
   projectilePrefab: {fileID: 7074218183982607485, guid: ff221adc9bba6e646913baec73a70bec, type: 3}
   projectileSpeed: 10
+  shootCooldown: 0.5
 --- !u!1 &6974135810187408815
 GameObject:
   m_ObjectHideFlags: 0
@@ -474,6 +493,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2941213630410360281}
+  - {fileID: 6268973504583679916}
   m_Father: {fileID: 4761324597314976142}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8384228388196305639
@@ -545,3 +565,69 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flipX: 1
   flipY: 0
+--- !u!1001 &8617129130641221331
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2200131677331275179}
+    m_Modifications:
+    - target: {fileID: 2407718782811363711, guid: 504251e91f62b9147abf6f3e5a7ec19b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407718782811363711, guid: 504251e91f62b9147abf6f3e5a7ec19b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.8886657
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407718782811363711, guid: 504251e91f62b9147abf6f3e5a7ec19b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407718782811363711, guid: 504251e91f62b9147abf6f3e5a7ec19b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407718782811363711, guid: 504251e91f62b9147abf6f3e5a7ec19b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407718782811363711, guid: 504251e91f62b9147abf6f3e5a7ec19b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407718782811363711, guid: 504251e91f62b9147abf6f3e5a7ec19b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407718782811363711, guid: 504251e91f62b9147abf6f3e5a7ec19b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407718782811363711, guid: 504251e91f62b9147abf6f3e5a7ec19b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2407718782811363711, guid: 504251e91f62b9147abf6f3e5a7ec19b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399477708305796102, guid: 504251e91f62b9147abf6f3e5a7ec19b, type: 3}
+      propertyPath: healthComponent
+      value: 
+      objectReference: {fileID: 7599945606972686303}
+    - target: {fileID: 5313156303256165112, guid: 504251e91f62b9147abf6f3e5a7ec19b, type: 3}
+      propertyPath: m_Name
+      value: DamageMarkerSpawner
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 504251e91f62b9147abf6f3e5a7ec19b, type: 3}
+--- !u!4 &6268973504583679916 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2407718782811363711, guid: 504251e91f62b9147abf6f3e5a7ec19b, type: 3}
+  m_PrefabInstance: {fileID: 8617129130641221331}
+  m_PrefabAsset: {fileID: 0}

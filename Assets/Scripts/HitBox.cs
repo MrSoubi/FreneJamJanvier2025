@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections.Generic;
 
 [RequireComponent(typeof(TriggerZoneManager))]
-public class HurtBox : MonoBehaviour
+public class HitBox : MonoBehaviour
 {
     [Header("HurtBox Settings")]
     [Tooltip("Dégâts infligés aux objets avec un composant Health.")]

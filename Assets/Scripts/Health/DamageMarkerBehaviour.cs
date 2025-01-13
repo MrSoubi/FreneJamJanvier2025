@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 public class DamageMarkerBehavior : MonoBehaviour
@@ -10,6 +11,8 @@ public class DamageMarkerBehavior : MonoBehaviour
     public float lifetime = 1f;
 
     private float elapsedTime = 0f;
+
+    [SerializeField] TextMeshProUGUI text;
 
     void Update()
     {
@@ -24,5 +27,10 @@ public class DamageMarkerBehavior : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    public void SetValue(int value)
+    {
+        text.text = value.ToString();
     }
 }

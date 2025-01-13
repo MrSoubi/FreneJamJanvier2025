@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5878837314021112840}
-  - component: {fileID: 7641379767499985101}
   - component: {fileID: 6070922751394798831}
   - component: {fileID: 8076843760031791020}
   - component: {fileID: 76813561854402414}
+  - component: {fileID: 8684553038750941706}
   m_Layer: 6
   m_Name: FlyingEnemy
   m_TagString: Untagged
@@ -38,23 +38,6 @@ Transform:
   - {fileID: 5559774142152948512}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7641379767499985101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2743210178657279025}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a9cbcb10cd0f9845a5f27cef5fa3b89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  killCount: {fileID: 0}
-  maxHealth: 100
-  onTakeDamage:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!70 &6070922751394798831
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -134,6 +117,23 @@ MonoBehaviour:
   moveSpeed: 2
   damping: 0.5
   m_PlayerDetector: {fileID: 8803296170122291342}
+--- !u!114 &8684553038750941706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2743210178657279025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88356598a2e40c54f83f77d33be53546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  onTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  killCount: {fileID: 11400000, guid: 4f6b50faddcf487459377f467f69d1a9, type: 2}
 --- !u!1 &3208819476551064481
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,7 +375,7 @@ PrefabInstance:
     - target: {fileID: 4399477708305796102, guid: 504251e91f62b9147abf6f3e5a7ec19b, type: 3}
       propertyPath: healthComponent
       value: 
-      objectReference: {fileID: 7641379767499985101}
+      objectReference: {fileID: 8684553038750941706}
     - target: {fileID: 5313156303256165112, guid: 504251e91f62b9147abf6f3e5a7ec19b, type: 3}
       propertyPath: m_Name
       value: DamageMarkerSpawner

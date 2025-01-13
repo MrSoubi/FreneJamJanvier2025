@@ -199,10 +199,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4810288548955141262}
-  - component: {fileID: 7593031119173571145}
   - component: {fileID: 1757615675228146883}
   - component: {fileID: 975887635008188373}
   - component: {fileID: 2238526797462591783}
+  - component: {fileID: 8951282646649413407}
   m_Layer: 6
   m_Name: WalkingEnemy
   m_TagString: Untagged
@@ -228,23 +228,6 @@ Transform:
   - {fileID: 3803506006869055824}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7593031119173571145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7350320628102696405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a9cbcb10cd0f9845a5f27cef5fa3b89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  killCount: {fileID: 11400000, guid: 4f6b50faddcf487459377f467f69d1a9, type: 2}
-  maxHealth: 100
-  onTakeDamage:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!70 &1757615675228146883
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -328,6 +311,23 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &8951282646649413407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7350320628102696405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88356598a2e40c54f83f77d33be53546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  onTakeDamage:
+    m_PersistentCalls:
+      m_Calls: []
+  killCount: {fileID: 11400000, guid: 4f6b50faddcf487459377f467f69d1a9, type: 2}
 --- !u!1001 &1219130767765416203
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -379,7 +379,7 @@ PrefabInstance:
     - target: {fileID: 4399477708305796102, guid: 504251e91f62b9147abf6f3e5a7ec19b, type: 3}
       propertyPath: healthComponent
       value: 
-      objectReference: {fileID: 7593031119173571145}
+      objectReference: {fileID: 8951282646649413407}
     - target: {fileID: 5313156303256165112, guid: 504251e91f62b9147abf6f3e5a7ec19b, type: 3}
       propertyPath: m_Name
       value: DamageMarkerSpawner
