@@ -12,9 +12,24 @@ public class FlyingEnemyBehaviour : MonoBehaviour
     private bool isPlayerDetected = false; // Tracks if the player is detected
     private Rigidbody2D rb; // Reference to the Rigidbody2D component
 
+    [SerializeField] int damage = 1;
+    private float pushForce = 1000;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        PlayerHealth playerHealth;
+
+        if (collision.gameObject.TryGetComponent<PlayerHealth>(out playerHealth))
+        {
+            playerHealth.TakeDamage(damage);
+            Vector2 pushDirection = (collision.transform.position - transform.position).normalized;
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(pushDirection * pushForce);
+        }
     }
 
     private void OnEnable()

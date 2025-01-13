@@ -15,6 +15,8 @@ public class EnemyBehavior : MonoBehaviour
     private Rigidbody2D rb; // Reference to the Rigidbody2D component
     private bool isGrounded = false; // Tracks if the enemy is on the ground
 
+    [SerializeField] int damage = 1;
+    private float pushForce = 1000;
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -50,6 +52,18 @@ public class EnemyBehavior : MonoBehaviour
         RaycastHit2D hit = Physics2D.Raycast(rayOrigin, Vector2.down, rayLength, groundLayer);
 
         isGrounded = hit.collider != null;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        PlayerHealth playerHealth;
+
+        if (collision.gameObject.TryGetComponent<PlayerHealth>(out playerHealth))
+        {
+            playerHealth.TakeDamage(damage);
+            Vector2 pushDirection =  (collision.transform.position - transform.position).normalized;
+            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(pushDirection * pushForce);
+        }
     }
 
     private void MoveTowardsPlayer()
