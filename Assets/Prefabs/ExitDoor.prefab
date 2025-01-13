@@ -149,3 +149,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorInteraction: {fileID: 11400000, guid: 7bf5c45e1e554f340a229f46b325f120, type: 2}
   levelToLoad: 
+  changeScene: {fileID: 11400000, guid: 9a9d93b7970a5694e8eac3fbe9119d17, type: 2}

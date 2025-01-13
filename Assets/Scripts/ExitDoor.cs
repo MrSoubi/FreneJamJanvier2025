@@ -4,8 +4,10 @@ using UnityEngine.SceneManagement;
 public class ExitDoor : Door
 {
     public string levelToLoad;
+    public RSE_ChangeScene changeScene;
+
     public override void Interact()
     {
-        SceneManager.LoadScene(levelToLoad);
+        changeScene.FireEvent(levelToLoad);
     }
 }
