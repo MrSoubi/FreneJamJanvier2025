@@ -133,25 +133,28 @@ public class PlayerController : MonoBehaviour
     #region SurfaceCheck
     private bool IsGrounded()
     {
-        return IsTouchingSurface(m_GroundCheck.position);
+        return IsTouchingSurface(m_GroundCheck.position, 0.1f, 0.5f);
     }
 
     private bool IsTouchingRightWall()
     {
-        return IsTouchingSurface(m_WallCheckRight.position);
+        return IsTouchingSurface(m_WallCheckRight.position, 1, 0.1f);
     }
 
     private bool IsTouchingLeftWall()
     {
         Debug.Log("check left wall");
-        return IsTouchingSurface(m_WallCheckLeft.position);
+        return IsTouchingSurface(m_WallCheckLeft.position, 1, 0.1f);
     }
 
-    private bool IsTouchingSurface(Vector3 position)
+    private bool IsTouchingSurface(Vector3 position, float height, float width)
     {
         bool result = false;
 
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(position, k_GroundedRadius, m_WhatIsGround);
+        Vector3 position_A = new Vector3(position.x - height, position.y - width, position.z);
+        Vector3 position_B = new Vector3(position.x + height, position.y + width, position.z);
+
+        Collider2D[] colliders = Physics2D.OverlapAreaAll(position_A, position_B, m_WhatIsGround);
         for (int i = 0; i < colliders.Length; i++)
         {
             if (colliders[i].gameObject != gameObject)
