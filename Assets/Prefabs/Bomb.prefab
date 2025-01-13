@@ -50,7 +50,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bombInteraction: {fileID: 11400000, guid: 08fdfc0ac3e28404aa8ad614ae4d9425, type: 2}
   explosionDelay: 2
-  explosionEffect: {fileID: 0}
+  explosionEffect: {fileID: 3110183732528077730, guid: bb7d1be3aa4ada94dba9e98057d73744, type: 3}
   m_HurtBox: {fileID: 911254812529196672}
 --- !u!61 &2700761757752983924
 BoxCollider2D:
@@ -150,7 +150,7 @@ SpriteRenderer:
   m_Size: {x: 0.36, y: 0.29}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &8869142388758769135

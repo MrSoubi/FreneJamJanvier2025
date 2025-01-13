@@ -35,7 +35,7 @@ public class Bomb : Interactable
         // Par exemple : instancier un effet visuel d'explosion
         if (explosionEffect != null)
         {
-            Instantiate(explosionEffect, transform.position, Quaternion.identity);
+            Instantiate(explosionEffect, transform.position + Vector3.down / 2, Quaternion.identity);
         }
 
         m_HurtBox.ApplyDamage();
