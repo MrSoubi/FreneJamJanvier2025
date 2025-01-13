@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b647d96189a72404fa6d1eb92955c262, type: 3}
   m_Name: WalkLeft
   m_EditorClassIdentifier: 
-  name: "Aller \xE0 gauche"
-  description: 
+  name: "Et \xE0 gauche !"
+  description: "Aller \xE0 gauche"
   icon: {fileID: 425529475, guid: a5dd92683731a5446a91c93c43061718, type: 3}
   isUnlocked: 0
   reactiveSO: {fileID: 0}
