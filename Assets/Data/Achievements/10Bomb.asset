@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b647d96189a72404fa6d1eb92955c262, type: 3}
   m_Name: 10Bomb
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: Little boy
+  description: Faire exploser 10 barils
   icon: {fileID: 0}
   isUnlocked: 0
-  reactiveSO: {fileID: 0}
+  reactiveSO: {fileID: 11400000, guid: c093fecc839c2264d9999907b27e5980, type: 2}
   reactiveSE: {fileID: 0}
-  targetValue: 0
+  targetValue: 10

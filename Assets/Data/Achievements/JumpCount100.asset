@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b647d96189a72404fa6d1eb92955c262, type: 3}
   m_Name: JumpCount100
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: "Tu nous prend de haut l\xE0.."
+  description: Sauter 100 fois
   icon: {fileID: 0}
   isUnlocked: 0
   reactiveSO: {fileID: 11400000, guid: ed77d5391f13cc6459578bec334fc682, type: 2}

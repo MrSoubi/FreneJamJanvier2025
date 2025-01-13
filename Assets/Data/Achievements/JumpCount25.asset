@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b647d96189a72404fa6d1eb92955c262, type: 3}
   m_Name: JumpCount25
   m_EditorClassIdentifier: 
-  name: 
-  description: 
+  name: "T'as cru qu'on jouait \xE0 Fortnite ?"
+  description: Sauter 25 fois
   icon: {fileID: 0}
   isUnlocked: 0
   reactiveSO: {fileID: 0}
