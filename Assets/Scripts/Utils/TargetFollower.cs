@@ -19,8 +19,8 @@ public class TargetFollower : MonoBehaviour
     // Variables pour le shake
     private bool isShaking = false;
     private float shakeDuration = 1f;
-    private float shakeBaseDuration = 1f;
-    private float shakeBaseIntensity = 0.5f;
+    private float shakeBaseDuration = 2f;
+    private float shakeBaseIntensity = 1f;
     private float shakeIntensity = 0.5f;
     private Vector3 originalPosition;
 
