@@ -16,6 +16,6 @@ MonoBehaviour:
   description: 
   icon: {fileID: 0}
   isUnlocked: 0
-  reactiveSO: {fileID: 0}
+  reactiveSO: {fileID: 11400000, guid: 9157bd035b0f25a41841ab633c63bb39, type: 2}
   reactiveSE: {fileID: 0}
-  targetValue: 0
+  targetValue: 1
