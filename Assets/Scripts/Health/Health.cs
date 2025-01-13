@@ -7,7 +7,7 @@ public abstract class Health : MonoBehaviour
     [Tooltip("Points de vie maximum de l'objet.")]
     public int maxHealth = 100;
 
-    private int currentHealth;
+    protected int currentHealth;
 
     public UnityEvent<int> onTakeDamage;
     
@@ -18,7 +18,7 @@ public abstract class Health : MonoBehaviour
     }
 
     // Appelé pour infliger des dégâts à l'objet
-    public void TakeDamage(int damage)
+    public virtual void TakeDamage(int damage)
     {
         currentHealth -= damage;
         onTakeDamage.Invoke(damage);
