@@ -20,6 +20,7 @@ public class SpawnManager : MonoBehaviour
         canSpawn = false;
     }
 
+    // Called from its child TriggerZone(Activation)
     public void ActivateSpawn()
     {
         canSpawn = true;
@@ -29,6 +30,7 @@ public class SpawnManager : MonoBehaviour
         }
     }
 
+    // Called from its child TriggerZone(Deactivation)
     public void DeactivateSpawn()
     {
         canSpawn = false;
