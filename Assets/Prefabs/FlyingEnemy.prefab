@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 5559774142152948512}
   - component: {fileID: 8803296170122291342}
   - component: {fileID: 2295730740174982801}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: PlayerDetector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
