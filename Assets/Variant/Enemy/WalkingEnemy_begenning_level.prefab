@@ -38,7 +38,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2238526797462591783, guid: 1980c780d54000d468f8499d4ef1e119, type: 3}
       propertyPath: groundMoveSpeed
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4810288548955141262, guid: 1980c780d54000d468f8499d4ef1e119, type: 3}
       propertyPath: m_LocalPosition.x
@@ -85,6 +85,10 @@ PrefabInstance:
       value: WalkingEnemy_begenning_level
       objectReference: {fileID: 0}
     - target: {fileID: 7593031119173571145, guid: 1980c780d54000d468f8499d4ef1e119, type: 3}
+      propertyPath: maxHealth
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8951282646649413407, guid: 1980c780d54000d468f8499d4ef1e119, type: 3}
       propertyPath: maxHealth
       value: 30
       objectReference: {fileID: 0}
