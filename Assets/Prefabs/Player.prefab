@@ -404,7 +404,7 @@ MonoBehaviour:
   m_WallJumpAngle: 40
   m_WhatIsGround:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 72
   m_GroundCheck: {fileID: 2260747861332641535}
   m_WallCheckRight: {fileID: 4069078497981184513}
   m_WallCheckLeft: {fileID: 2872455793163729513}
