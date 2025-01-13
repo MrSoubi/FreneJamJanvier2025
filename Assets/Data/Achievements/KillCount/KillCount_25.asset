@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Kill 25
   description: 
-  icon: {fileID: 425529475, guid: a5dd92683731a5446a91c93c43061718, type: 3}
+  icon: {fileID: 327617049, guid: a5dd92683731a5446a91c93c43061718, type: 3}
   isUnlocked: 0
   reactiveSO: {fileID: 11400000, guid: a2b3c44f1c1005142955a70d614341a6, type: 2}
   reactiveSE: {fileID: 0}

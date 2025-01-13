@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: Un vrai poulet
   description: Tirer 50 fois
-  icon: {fileID: 0}
+  icon: {fileID: 327617049, guid: a5dd92683731a5446a91c93c43061718, type: 3}
   isUnlocked: 0
   reactiveSO: {fileID: 11400000, guid: 2a96a152337b52841a8f790b33787e76, type: 2}
   reactiveSE: {fileID: 0}

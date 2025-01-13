@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: "Et \xE0 droite !"
   description: "Aller \xE0 droite"
-  icon: {fileID: 425529475, guid: a5dd92683731a5446a91c93c43061718, type: 3}
+  icon: {fileID: 327617049, guid: a5dd92683731a5446a91c93c43061718, type: 3}
   isUnlocked: 0
   reactiveSO: {fileID: 0}
   reactiveSE: {fileID: 11400000, guid: e38765791972bd14db980e3bdbc7e182, type: 2}

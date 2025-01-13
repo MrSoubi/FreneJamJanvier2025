@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b647d96189a72404fa6d1eb92955c262, type: 3}
   m_Name: DeathCount_25
   m_EditorClassIdentifier: 
-  name: Death 25
-  description: You're dead.
-  icon: {fileID: 425529475, guid: a5dd92683731a5446a91c93c43061718, type: 3}
+  name: "Ils ont tu\xE9 Kenny !"
+  description: Tu es mort 25 fois
+  icon: {fileID: 327617049, guid: a5dd92683731a5446a91c93c43061718, type: 3}
   isUnlocked: 0
   reactiveSO: {fileID: 11400000, guid: a2b3c44f1c1005142955a70d614341a6, type: 2}
   reactiveSE: {fileID: 0}
