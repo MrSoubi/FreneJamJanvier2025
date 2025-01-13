@@ -49,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lifetime: 6
   damage: 10
+  sfx: {fileID: 5315734761875265609, guid: 7374590f7680a0646908cc2a31597aeb, type: 3}
 --- !u!70 &5500011476995614382
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

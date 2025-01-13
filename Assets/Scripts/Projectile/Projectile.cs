@@ -9,9 +9,12 @@ public class Projectile : MonoBehaviour
     [Tooltip("Dégâts infligés par le projectile.")]
     public int damage = 10;
 
+    public GameObject sfx;
+
     void Start()
     {
         // Détruire le projectile après un certain temps
+        Instantiate(sfx);
         Destroy(gameObject, lifetime);
     }
 
