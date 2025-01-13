@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class AchievementMenuManager : MonoBehaviour
 {
-    public Transform gridParent; // Le parent de la grille (Panel avec Grid Layout Group)
+    public RectTransform gridParent; // Le parent de la grille (Panel avec Grid Layout Group)
     public GameObject achievementItemPrefab; // Le prefab pour un item d'achievement
 
     public List<Achievement> achievements; // Liste des achievements (remplie dans l'inspecteur)
@@ -15,6 +15,11 @@ public class AchievementMenuManager : MonoBehaviour
 
     void PopulateGrid()
     {
+        foreach (RectTransform child in gridParent)
+        {
+            Destroy(child.gameObject);
+        }
+
         foreach (var achievement in achievements)
         {
             // Instancier un prefab pour chaque achievement

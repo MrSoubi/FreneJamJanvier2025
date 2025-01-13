@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class AchievementWindowEnabler : MonoBehaviour
 {
     public GameObject achievementGrid;
 
@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Tab))
         {
             achievementGrid.SetActive(!achievementGrid.activeSelf);
+            Time.timeScale = Mathf.Abs(Time.timeScale - 1);
         }
     }
 }

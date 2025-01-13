@@ -382,14 +382,14 @@ MonoBehaviour:
   gridParent: {fileID: 4759725090583238794}
   achievementItemPrefab: {fileID: 496547309336296568, guid: c636f5c8f6ae91245a24870d20447180, type: 3}
   achievements:
+  - {fileID: 11400000, guid: 881a365b80db5a44e96959df0060a193, type: 2}
+  - {fileID: 11400000, guid: 49e47c6b5689f014dadbf26705261171, type: 2}
+  - {fileID: 11400000, guid: 9728a5e7559128340905df9bc690a292, type: 2}
   - {fileID: 11400000, guid: 76c412c0093bd1048a1f44b626ab7105, type: 2}
   - {fileID: 11400000, guid: 78bdd244d76b36f4681949449d207512, type: 2}
   - {fileID: 11400000, guid: 583cd1fc29fad5142ad1b77bbabafdb9, type: 2}
   - {fileID: 11400000, guid: e486e9abc7c8c3541b8f615fe539f802, type: 2}
   - {fileID: 11400000, guid: e534afd438e7b4a48962ddcb4b27fba1, type: 2}
-  - {fileID: 11400000, guid: 8781a780adff4d344aecdfa52c31d2fa, type: 2}
-  - {fileID: 11400000, guid: 5b066331cdf68134da05d4554eb241c3, type: 2}
-  - {fileID: 11400000, guid: 492277e5615d3fc46a5eb6cbfa321d77, type: 2}
   - {fileID: 11400000, guid: 6863501ebdfac9444b3471b495cab9b0, type: 2}
   - {fileID: 11400000, guid: eb4e409d96f82834ca48f9fc8084d0c2, type: 2}
   - {fileID: 11400000, guid: 7db7741454ff86046b9bb8c1e7e02f1e, type: 2}
@@ -399,11 +399,3 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3dcb88a66ccadd849896811e5952d4eb, type: 2}
   - {fileID: 11400000, guid: c2f4a599a76b3b947b668a37a7aacbcd, type: 2}
   - {fileID: 11400000, guid: 3b900956ad3a26d4b91082620d5f9d87, type: 2}
-  - {fileID: 11400000, guid: 881a365b80db5a44e96959df0060a193, type: 2}
-  - {fileID: 11400000, guid: 49e47c6b5689f014dadbf26705261171, type: 2}
-  - {fileID: 11400000, guid: 9728a5e7559128340905df9bc690a292, type: 2}
-  - {fileID: 11400000, guid: 0873a7b22cbfe6a46a023b5d4b2d17b2, type: 2}
-  - {fileID: 11400000, guid: d5c5b4267cfc5ac4a8e91ca3b3a71460, type: 2}
-  - {fileID: 11400000, guid: c5a595bf2f9595f408dfe82ca3514506, type: 2}
-  - {fileID: 11400000, guid: 14d65f8be2e8c914ba03c4cc118158a1, type: 2}
-  - {fileID: 11400000, guid: 2cc3bd32037dc82478b02f6cc7e36db7, type: 2}
