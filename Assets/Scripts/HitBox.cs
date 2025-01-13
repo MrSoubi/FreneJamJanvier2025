@@ -59,7 +59,7 @@ public class HitBox : MonoBehaviour
         // Parcours inverse car les éléments peuvent être détruits après l'application des dégâts
         for (int i = objectsInZone.Count - 1; i >= 0; i--)
         {
-            Health targetHealth = objectsInZone[i].GetComponent<Health>();
+            Health targetHealth = objectsInZone[i].GetComponent<EnemyHealth>();
             if (targetHealth != null)
             {
                 // Infliger des dégâts à chaque objet avec un composant Health
