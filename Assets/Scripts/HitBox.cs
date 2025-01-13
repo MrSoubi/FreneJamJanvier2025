@@ -56,9 +56,10 @@ public class HitBox : MonoBehaviour
     public void ApplyDamage()
     {
         // Parcourir tous les objets actuellement dans la zone
-        foreach (GameObject obj in objectsInZone)
+        // Parcours inverse car les éléments peuvent être détruits après l'application des dégâts
+        for (int i = objectsInZone.Count - 1; i >= 0; i--)
         {
-            Health targetHealth = obj.GetComponent<Health>();
+            Health targetHealth = objectsInZone[i].GetComponent<Health>();
             if (targetHealth != null)
             {
                 // Infliger des dégâts à chaque objet avec un composant Health
