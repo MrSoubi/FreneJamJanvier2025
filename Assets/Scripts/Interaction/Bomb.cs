@@ -27,7 +27,7 @@ public class Bomb : Interactable
         Explode();
     }
 
-    private void Explode()
+    public void Explode()
     {
         bombInteraction?.FireEvent();
 

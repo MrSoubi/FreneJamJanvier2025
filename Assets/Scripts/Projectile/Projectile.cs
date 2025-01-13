@@ -25,6 +25,11 @@ public class Projectile : MonoBehaviour
             targetHealth.TakeDamage(damage);
         }
 
+        if (collision.GetComponent<Bomb>() != null)
+        {
+            collision.GetComponent<Bomb>().Interact();
+        }
+
         // Détruit le projectile après la collision
         Destroy(gameObject);
     }

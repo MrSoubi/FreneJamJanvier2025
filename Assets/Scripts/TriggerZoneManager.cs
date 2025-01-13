@@ -11,6 +11,14 @@ public class TriggerZoneManager : MonoBehaviour
     // Liste des objets actuellement dans la zone
     private List<GameObject> objectsInZone = new List<GameObject>();
 
+    private void Start()
+    {
+        foreach(Collider2D col in Physics2D.OverlapCircleAll(transform.position, 3))
+        {
+            objectsInZone.Add(col.gameObject);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!objectsInZone.Contains(other.gameObject))
@@ -39,6 +47,11 @@ public class TriggerZoneManager : MonoBehaviour
     /// <returns>Liste des GameObjects dans la zone</returns>
     public List<GameObject> GetObjectsInZone()
     {
-        return new List<GameObject>(objectsInZone); // Retourne une copie pour éviter des modifications non désirées
+        for (int i = objectsInZone.Count - 1; i >= 0; i--)
+        {
+            if (objectsInZone[i] == null) objectsInZone.RemoveAt(i);
+        }
+
+        return objectsInZone; // Retourne une copie pour éviter des modifications non désirées
     }
 }
