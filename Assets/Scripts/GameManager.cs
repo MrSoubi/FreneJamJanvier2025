@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        playTime.Value = 0;
         m_currentScene = "MainMenu";
         SceneManager.LoadSceneAsync("MainMenu", LoadSceneMode.Additive);
     }
