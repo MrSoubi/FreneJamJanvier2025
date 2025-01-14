@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bombInteraction: {fileID: 11400000, guid: 08fdfc0ac3e28404aa8ad614ae4d9425, type: 2}
+  bombCount: {fileID: 11400000, guid: c093fecc839c2264d9999907b27e5980, type: 2}
   explosionDelay: 2
   explosionEffect: {fileID: 3110183732528077730, guid: bb7d1be3aa4ada94dba9e98057d73744, type: 3}
   m_HurtBox: {fileID: 911254812529196672}

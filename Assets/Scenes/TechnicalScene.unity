@@ -820,7 +820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c7a56a5fb505e4a9993ba6b31a82de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playTime: {fileID: 0}
+  playTime: {fileID: 11400000, guid: 9157bd035b0f25a41841ab633c63bb39, type: 2}
   changeScene: {fileID: 11400000, guid: 9a9d93b7970a5694e8eac3fbe9119d17, type: 2}
   playerDeath: {fileID: 11400000, guid: 358d3e526deddbd439d1c02db1a772bc, type: 2}
   deathMessage: {fileID: 1582954673}

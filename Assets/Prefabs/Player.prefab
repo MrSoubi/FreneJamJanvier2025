@@ -388,11 +388,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07325773a1bb3bc4897d62a01e2b7c5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  totalWalkDistance: {fileID: 11400000, guid: 762ee427eb54dcb4eab68415240bde2d, type: 2}
+  totalWalkDistance: {fileID: 11400000, guid: 64e421edd36c10b4b861b11c82e77a90, type: 2}
   playerJump: {fileID: 11400000, guid: 80f1b29f0315a794ca428145fd61e510, type: 2}
   playerMoveLeft: {fileID: 11400000, guid: 3fc963f7a6ddd51499fb58468d848797, type: 2}
   playerMoveRight: {fileID: 11400000, guid: e38765791972bd14db980e3bdbc7e182, type: 2}
   playerWallJump: {fileID: 11400000, guid: 4ccf0816a0465794ca199754ea0757dd, type: 2}
+  jumpCount: {fileID: 11400000, guid: ed77d5391f13cc6459578bec334fc682, type: 2}
+  wallJumpCount: {fileID: 11400000, guid: 190b951da01988444918b1470efee4c8, type: 2}
   m_JumpForce: 1000
   m_WallJumpForce: 1250
   m_GroundSpeed: 10
